@@ -22,6 +22,7 @@ module "addons" {
   source        = "./modules/addons"
   argo_enabled  = true
   keptn_enabled = true
+  cm_enabled    = true
   argo_envs     = var.argo_envs
 
   depends_on = [module.gke-cluster]

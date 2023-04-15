@@ -19,7 +19,7 @@ variable "cm_config" {
     name = "cert-manager"
     chart = "cert-manager"
     namespace = "cert-manager"
-    version = "v1.10.0"
+    version = "v1.11.0"
     repository = "https://charts.jetstack.io"
     enabled = false
     set = [

@@ -16,6 +16,7 @@ module "gke-cluster" {
   node_count        = var.node_count
   node_machine_type = var.node_machine_type
   preemptible       = var.preemptible
+  disk_size_gb      = var.disk_size_gb
 }
 
 module "addons" {

@@ -50,3 +50,9 @@ variable "argo_envs" {
   }))
 }
 
+variable "disk_size_gb" {
+  type        = number
+  description = "The size of the disk attached to each node"
+  default     = 40
+}
+

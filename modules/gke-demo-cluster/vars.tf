@@ -31,3 +31,9 @@ variable "project_id" {
   type        = string
   description = "The project ID to deploy to"
 }
+
+variable "disk_size_gb" {
+    type        = number
+    description = "The size of the disk in GB"
+    default     = 40
+}

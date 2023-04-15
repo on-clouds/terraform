@@ -1,3 +1,8 @@
+variable "argo_enabled" {
+  type = bool
+  default = false
+}
+
 variable "argo_config" {
   type = object({
     name = string
@@ -5,7 +10,6 @@ variable "argo_config" {
     version = string
     chart = string
     repository = string
-    enabled = bool
   })
   default = {
     name = "argo-cd"

@@ -1,5 +1,6 @@
+
 resource "helm_release" "argo_cd" {
-  count           = var.argo_config.enabled ? 1 : 0
+  count           = var.argo_enabled ? 1 : 0
   name             = var.argo_config.name
   repository       = var.argo_config.repository
   chart            = var.argo_config.chart

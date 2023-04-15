@@ -1,13 +1,6 @@
 module "argo" {
   source = "./argocd"
-  argo_config = {
-    name = "argo-cd"
-    chart = "argo-cd"
-    namespace = "argocd"
-    version = "5.16.7"
-    repository = "https://argoproj.github.io/argo-helm"
-    enabled = var.argo_enabled
-  }
+  argo_enabled = var.argo_enabled
   argo_envs = var.argo_envs
 }
 

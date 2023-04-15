@@ -1,4 +1,4 @@
-resource "helm_release" "keptn" {
+resource "helm_release" "cert-manager" {
   count           = var.cm_enabled ? 1 : 0
   name             = var.cm_config.name
   repository       = var.cm_config.repository

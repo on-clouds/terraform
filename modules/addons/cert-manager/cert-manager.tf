@@ -9,5 +9,15 @@ resource "helm_release" "cert-manager" {
   namespace        = var.cm_config.namespace
   lint             = true
   wait             = true
-  values           = var.cm_config.set
+
+  dynamic "set" {
+    iterator = each_item
+    for_each = try(var.cm_config["set"], null) != null ? distinct(concat(var.set_values, var.cm_config["set"])) : var.set_values
+
+    content {
+      name  = each_item.value.name
+      value = each_item.value.value
+      type  = try(each_item.value.type, null)
+    }
+  }
 }

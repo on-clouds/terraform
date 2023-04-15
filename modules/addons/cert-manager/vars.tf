@@ -30,3 +30,9 @@ variable "cm_config" {
     ]
   }
 }
+
+variable "set_values" {
+  description = "Forced set values"
+  type        = any
+  default     = []
+}

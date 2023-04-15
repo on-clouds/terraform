@@ -24,11 +24,11 @@ resource "google_container_node_pool" "primary_nodes" {
   cluster    = google_container_cluster.gke-demo-cluster.name
   node_count = var.node_count
   project    = var.project_id
-  disk_size_gb = var.disk_size_gb
 
   node_config {
     preemptible  = var.preemptible
     machine_type = var.node_machine_type
+    disk_size_gb = var.disk_size_gb
 
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
     service_account = google_service_account.default.email

@@ -1,5 +1,5 @@
 resource "helm_release" "cert-manager" {
-  count           = var.cm_enabled ? 1 : 0
+  count            = var.cm_enabled ? 1 : 0
   name             = var.cm_config.name
   repository       = var.cm_config.repository
   chart            = var.cm_config.chart
@@ -9,4 +9,5 @@ resource "helm_release" "cert-manager" {
   namespace        = var.cm_config.namespace
   lint             = true
   wait             = true
+  set              = var.cm_config.set
 }

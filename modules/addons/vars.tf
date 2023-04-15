@@ -8,6 +8,11 @@ variable "keptn_enabled" {
   default = false
 }
 
+variable "cm_enabled" {
+  type = bool
+  default = false
+}
+
 variable "argo_envs" {
   type = list(object({
     name = string

@@ -23,3 +23,8 @@ module "keptn" {
   }
 }
 
+module "cert-manager" {
+  source = "./cert-manager"
+  cm_enabled = var.cm_enabled
+}
+

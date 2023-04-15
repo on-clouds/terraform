@@ -11,6 +11,10 @@ variable "argo_enabled" {
   type       = bool
 }
 
+variable "cm_enabled" {
+  type       = bool
+}
+
 variable "keptn_enabled" {
   type       = bool
 }

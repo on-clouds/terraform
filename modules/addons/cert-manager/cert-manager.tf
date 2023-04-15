@@ -9,5 +9,5 @@ resource "helm_release" "cert-manager" {
   namespace        = var.cm_config.namespace
   lint             = true
   wait             = true
-  set              = var.cm_config.set
+  values           = var.cm_config.set
 }

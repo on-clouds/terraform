@@ -16,6 +16,14 @@ resource "google_container_cluster" "gke-demo-cluster" {
   # node pool and immediately delete it.
   remove_default_node_pool = true
   initial_node_count       = 1
+
+  maintenance_policy {
+    daily_maintenance_window {
+      start_time = "03:00"
+    }
+  }
+  # Prevent updat
+
 }
 
 resource "google_container_node_pool" "primary_nodes" {

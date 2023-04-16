@@ -45,6 +45,10 @@ resource "google_container_cluster" "gke-demo-cluster" {
     workload_metadata_config {
       mode = "GKE_METADATA"
     }
+
+    shielded_instance_config {
+      enable_secure_boot = false
+    }
   }
 
   maintenance_policy {
@@ -80,6 +84,9 @@ resource "google_container_node_pool" "primary_nodes" {
       mode = "GKE_METADATA"
     }
 
+    shielded_instance_config {
+      enable_secure_boot = false
+    }
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
     service_account = google_service_account.default.email
     oauth_scopes    = [

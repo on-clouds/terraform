@@ -28,8 +28,7 @@ resource "google_container_cluster" "gke-demo-cluster" {
     enabled = true
   }
 
-  ip_allocation_policy
-  {}
+  ip_allocation_policy = {}
 
   master_auth {
     client_certificate_config {

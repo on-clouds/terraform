@@ -7,17 +7,10 @@ variable "argo_config" {
   type = object({
     name = string
     namespace = string
-    version = string
-    chart = string
-    repository = string
   })
   default = {
     name = "argo-cd"
-    chart = "argo-cd"
     namespace = "argocd"
-    version = "5.29.1"
-    repository = "https://argoproj.github.io/argo-helm"
-    enabled = false
   }
 }
 

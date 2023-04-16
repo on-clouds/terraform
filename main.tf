@@ -1,13 +1,3 @@
-provider "helm" {
-  kubernetes {
-    host                   = module.gke-cluster.endpoint
-    token                  = module.gke-cluster.token
-    cluster_ca_certificate = base64decode(
-      module.gke-cluster.cluster_ca_certificate,
-    )
-  }
-}
-
 module "gke-cluster" {
   project_id        = var.project_id
   source            = "./modules/gke-demo-cluster"

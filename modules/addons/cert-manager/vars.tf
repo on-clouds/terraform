@@ -7,9 +7,6 @@ variable "cm_config" {
   type = object({
     name = string
     namespace = string
-    version = string
-    chart = string
-    repository = string
     set = list(object({
       name = string
       value = string
@@ -17,10 +14,7 @@ variable "cm_config" {
   })
   default = {
     name = "cert-manager"
-    chart = "cert-manager"
     namespace = "cert-manager"
-    version = "v1.11.0"
-    repository = "https://charts.jetstack.io"
     enabled = false
     set = [
       {

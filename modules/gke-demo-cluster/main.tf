@@ -16,6 +16,30 @@ resource "google_container_cluster" "gke-demo-cluster" {
   # node pool and immediately delete it.
   remove_default_node_pool = true
   initial_node_count       = 1
+  enable_binary_authorization = true
+
+  min_master_version = 1.12
+
+  release_channel {
+    channel = var.release_channel
+  }
+
+  network_policy {
+    enabled = true
+  }
+
+  ip_allocation_policy
+  {}
+
+  master_auth {
+    client_certificate_config {
+      issue_client_certificate = false
+    }
+  }
+
+  labels = {
+    type = "gke-demo-cluster"
+  }
 
   maintenance_policy {
     daily_maintenance_window {
@@ -33,10 +57,20 @@ resource "google_container_node_pool" "primary_nodes" {
   node_count = var.node_count
   project    = var.project_id
 
+  management {
+    auto_upgrade = true
+    auto_repair = true
+  }
+
   node_config {
     preemptible  = var.preemptible
     machine_type = var.node_machine_type
     disk_size_gb = var.disk_size_gb
+    image_type   = "COS"
+
+    workload_metadata_config {
+      mode = "GKE_METADATA"
+    }
 
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
     service_account = google_service_account.default.email

@@ -37,3 +37,9 @@ variable "disk_size_gb" {
     description = "The size of the disk in GB"
     default     = 40
 }
+
+variable "release_channel" {
+    type        = string
+    description = "The release channel of the cluster"
+    default     = "regular"
+}

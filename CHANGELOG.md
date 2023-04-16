@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.0.2](https://github.com/on-clouds/terraform/compare/v0.0.1...v0.0.2) (2023-04-16)
+
+
+### Features
+
+* add checkov ([45823ee](https://github.com/on-clouds/terraform/commit/45823ee1ac66b8d9fe93e99101150e90e1a90fee))
+
+
+### Bug Fixes
+
+* provider issues ([d814d27](https://github.com/on-clouds/terraform/commit/d814d27e7a1aef8001389d2b24ea97eb69bc47f3))
+* provider issues ([998adf4](https://github.com/on-clouds/terraform/commit/998adf4c8291167d89fe9832d5db23a19526dea7))
+* provider issues ([2c997e7](https://github.com/on-clouds/terraform/commit/2c997e7a22a90618d680e90d718f16c8e80ca43a))
+* provider issues ([72ea57f](https://github.com/on-clouds/terraform/commit/72ea57fb0de1d22cff9a6e4e5999775498550cca))
+* provider issues ([a2459a8](https://github.com/on-clouds/terraform/commit/a2459a810f8d8db1a4f38f512a1112d1060ff16a))
+* some checkov findings ([fbd49fa](https://github.com/on-clouds/terraform/commit/fbd49fadaecd331704a3077292a49563d4f9d916))
+* some checkov findings ([fd2d3c2](https://github.com/on-clouds/terraform/commit/fd2d3c2e6f7e5eef576ff2df432c42cef6f22a53))
+
+
+### Other
+
+* **deps:** pin dependencies ([e3199ad](https://github.com/on-clouds/terraform/commit/e3199ad24fbdecefe8d3772076e20ac64eb37f9b))
+* **deps:** update actions/checkout action to v3 ([32dc9e3](https://github.com/on-clouds/terraform/commit/32dc9e39da1562e7c2d5dcc65e7c8b0ed468d8e7))
+* **deps:** update actions/setup-python action to v4 ([c903d03](https://github.com/on-clouds/terraform/commit/c903d034a0b63a65a6a93bf4e229752663eceda2))
+* **deps:** update terraform google-beta to v3.90.1 ([032b152](https://github.com/on-clouds/terraform/commit/032b1523fda624752bc5c4a6d937a0b08956728c))
+* **deps:** update terraform google-beta to v4 ([51f66af](https://github.com/on-clouds/terraform/commit/51f66af90992666783c031c9973a0e27ea597b33))
+
 ## [0.0.1](https://github.com/on-clouds/terraform/compare/v0.0.1...v0.0.1) (2023-04-16)
 
 

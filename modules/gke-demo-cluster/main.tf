@@ -55,6 +55,10 @@ resource "google_container_node_pool" "primary_nodes" {
   node_count = var.node_count
   project    = var.project_id
 
+  labels = {
+    cluster_type = "gke-demo-cluster"
+  }
+
   management {
     auto_upgrade = true
     auto_repair = true

@@ -7,15 +7,16 @@ resource "google_service_account" "default" {
 }
 
 resource "google_container_cluster" "gke-demo-cluster" {
+  provider = google-beta
   name     = var.cluster_name
   location = var.cluster_location
-  project = var.project_id
+  project  = var.project_id
 
   # We can't create a cluster with no node pool defined, but we want to only use
   # separately managed node pools. So we create the smallest possible default
   # node pool and immediately delete it.
-  remove_default_node_pool = true
-  initial_node_count       = 1
+  remove_default_node_pool    = true
+  initial_node_count          = 1
   enable_binary_authorization = true
 
   min_master_version = 1.12
@@ -28,7 +29,7 @@ resource "google_container_cluster" "gke-demo-cluster" {
     enabled = true
   }
 
-  ip_allocation_policy = {}
+  ip_allocation_policy {}
 
   master_auth {
     client_certificate_config {
@@ -36,8 +37,8 @@ resource "google_container_cluster" "gke-demo-cluster" {
     }
   }
 
-  labels = {
-    type = "gke-demo-cluster"
+  pod_security_policy_config {
+    enabled = true
   }
 
   maintenance_policy {
@@ -45,8 +46,6 @@ resource "google_container_cluster" "gke-demo-cluster" {
       start_time = "03:00"
     }
   }
-  # Prevent updat
-
 }
 
 resource "google_container_node_pool" "primary_nodes" {

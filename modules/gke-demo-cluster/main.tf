@@ -41,6 +41,12 @@ resource "google_container_cluster" "gke-demo-cluster" {
     enabled = true
   }
 
+  node_config {
+    workload_metadata_config {
+      mode = "GKE_METADATA"
+    }
+  }
+
   maintenance_policy {
     daily_maintenance_window {
       start_time = "03:00"

@@ -19,4 +19,4 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           framework: terraform
-          skip_check: CKV_GCP_21, CKV_GCP_25, CKV_GCP_61, CKV_GCP_68
+          skip_check: CKV_GCP_21,CKV_GCP_25,CKV_GCP_61,CKV_GCP_68

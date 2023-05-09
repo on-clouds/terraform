@@ -18,7 +18,7 @@ module "keptn" {
 
 module "k8sgpt" {
   source = "./k8sgpt-operator"
-  keptn_config = {
+  k8sgpt_config = {
     name = "k8sgpt"
     namespace = "k8sgpt"
     enabled = var.k8sgpt_enabled

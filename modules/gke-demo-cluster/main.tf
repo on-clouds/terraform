@@ -35,10 +35,6 @@ resource "google_container_cluster" "gke-demo-cluster" {
     }
   }
 
-  pod_security_policy_config {
-    enabled = true
-  }
-
   node_config {
     shielded_instance_config {
       enable_secure_boot = false

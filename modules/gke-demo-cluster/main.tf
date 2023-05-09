@@ -40,10 +40,6 @@ resource "google_container_cluster" "gke-demo-cluster" {
   }
 
   node_config {
-    workload_metadata_config {
-      mode = "GKE_METADATA"
-    }
-
     shielded_instance_config {
       enable_secure_boot = false
     }
@@ -74,10 +70,6 @@ resource "google_container_node_pool" "primary_nodes" {
     machine_type = var.node_machine_type
     disk_size_gb = var.disk_size_gb
     image_type   = "COS"
-
-    workload_metadata_config {
-      mode = "GKE_METADATA"
-    }
 
     shielded_instance_config {
       enable_secure_boot = false

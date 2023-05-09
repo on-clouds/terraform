@@ -11,9 +11,9 @@ module "gke-cluster" {
 
 module "addons" {
   source        = "./modules/addons"
-  argo_enabled  = true
-  keptn_enabled = true
-  cm_enabled    = true
+  argo_enabled  =var.argo_enabled
+  keptn_enabled = var.keptn_enabled
+  cm_enabled    = var.cm_enabled
   argo_envs     = var.argo_envs
   k8sgpt_enabled = var.k8sgpt_enabled
 

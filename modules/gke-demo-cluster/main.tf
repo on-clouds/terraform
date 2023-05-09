@@ -65,7 +65,7 @@ resource "google_container_node_pool" "primary_nodes" {
     preemptible  = var.preemptible
     machine_type = var.node_machine_type
     disk_size_gb = var.disk_size_gb
-    image_type   = "COS"
+    image_type   = "COS_CONTAINERD"
 
     shielded_instance_config {
       enable_secure_boot = false

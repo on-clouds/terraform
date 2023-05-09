@@ -1,3 +1,21 @@
+variable "create_gke_cluster" {
+  type        = bool
+  description = "Whether to create a GKE cluster"
+  default     = false
+}
+
+variable "provider" {
+  type        = string
+  description = "The provider to use"
+  default     = "gke"
+}
+
+variable "create_sks_cluster" {
+  type        = bool
+  description = "Whether to create a SKS cluster"
+  default     = false
+}
+
 variable "project_id" {
   type       = string
 }
@@ -56,3 +74,13 @@ variable "disk_size_gb" {
   default     = 40
 }
 
+variable "k8sgpt_enabled" {
+  type = bool
+  default = false
+}
+
+variable "k8sgpt_ai_token" {
+  type = string
+  default = ""
+  sensitive = true
+}

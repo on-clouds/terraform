@@ -15,6 +15,7 @@ module "addons" {
   keptn_enabled = true
   cm_enabled    = true
   argo_envs     = var.argo_envs
+  k8sgpt_enabled = var.k8sgpt_enabled
 
   depends_on = [module.gke-cluster]
 }

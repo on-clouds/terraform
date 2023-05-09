@@ -1,0 +1,6 @@
+apiVersion: v2
+name: k8sgpt-prereqs
+description: A Helm chart that installs the prerequisites for k8sgpt-operator
+type: application
+version: 0.1.0
+appVersion: 0.1.0

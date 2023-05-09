@@ -16,6 +16,16 @@ module "keptn" {
   }
 }
 
+module "k8sgpt" {
+  source = "./k8sgpt-operator"
+  keptn_config = {
+    name = "k8sgpt"
+    namespace = "k8sgpt"
+    enabled = var.k8sgpt_enabled
+  }
+  ai_token = var.k8sgpt_ai_token
+}
+
 module "cert-manager" {
   source = "./cert-manager"
   cm_enabled = var.cm_enabled

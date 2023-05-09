@@ -4,12 +4,6 @@ variable "create_gke_cluster" {
   default     = false
 }
 
-variable "provider" {
-  type        = string
-  description = "The provider to use"
-  default     = "gke"
-}
-
 variable "create_sks_cluster" {
   type        = bool
   description = "Whether to create a SKS cluster"

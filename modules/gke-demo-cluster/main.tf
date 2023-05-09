@@ -19,8 +19,6 @@ resource "google_container_cluster" "gke-demo-cluster" {
   initial_node_count          = 1
   enable_binary_authorization = true
 
-  min_master_version = 1.12
-
   release_channel {
     channel = var.release_channel
   }

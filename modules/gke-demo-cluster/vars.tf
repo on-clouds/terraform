@@ -41,5 +41,5 @@ variable "disk_size_gb" {
 variable "release_channel" {
     type        = string
     description = "The release channel of the cluster"
-    default     = "regular"
+    default     = "REGULAR"
 }

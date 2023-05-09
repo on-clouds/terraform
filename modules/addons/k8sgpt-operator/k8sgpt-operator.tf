@@ -14,7 +14,7 @@ resource "helm_release" "k8sgpt" {
 resource "helm_release" "k8sgpt-prereqs" {
   count     = var.k8sgpt_config.enabled ? 1 : 0
   chart     = "${path.module}/charts/k8sgpt-prereqs"
-  name      = k8sgpt-prereqs
+  name  = "k8sgpt-prereqs"
   version   = "1.0.0"
   namespace = var.k8sgpt_config.namespace
 

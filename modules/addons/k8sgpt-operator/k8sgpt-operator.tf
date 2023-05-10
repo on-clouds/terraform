@@ -7,7 +7,7 @@ resource "helm_release" "k8sgpt" {
   lint             = true
   wait             = true
   chart = "k8sgpt-operator"
-  version = "0.3.0"
+  version = "0.0.11"
   repository = "https://charts.k8sgpt.ai"
 }
 

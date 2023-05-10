@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.0.3](https://github.com/on-clouds/terraform/compare/v0.0.2...v0.0.3) (2023-05-10)
+
+
+### Features
+
+* add k8sgpt ([43daca1](https://github.com/on-clouds/terraform/commit/43daca167ef9a57ad3b5e9a9222b07026c1f117c))
+* add k8sgpt ([9f1db21](https://github.com/on-clouds/terraform/commit/9f1db21e4a12301bf6e81a2941725f7c9c976bb7))
+* add k8sgpt ([f194366](https://github.com/on-clouds/terraform/commit/f194366a29a791359d4081d95b731e55ae3b739d))
+* add k8sgpt ([9dc4ed7](https://github.com/on-clouds/terraform/commit/9dc4ed7024dc3df7e4ba39233e26467e9678cd36))
+* add k8sgpt ([5769168](https://github.com/on-clouds/terraform/commit/5769168643d3bb522d4b09e592a81131df150214))
+* add k8sgpt ([7185256](https://github.com/on-clouds/terraform/commit/7185256fbae50bab96ef9d1e57844e46e59b41c4))
+* add k8sgpt ([f07807b](https://github.com/on-clouds/terraform/commit/f07807b8581584de4dd249cb1476f0d1f2888ecf))
+* add k8sgpt ([87b5dd4](https://github.com/on-clouds/terraform/commit/87b5dd40dd5634d1a2ef8a926503c080f5df4626))
+* fix cluster ([305f39b](https://github.com/on-clouds/terraform/commit/305f39ba09ced11903620a118a50edba944cf190))
+* fix cluster ([e398143](https://github.com/on-clouds/terraform/commit/e3981435231e09365ff545d2fdf99078d0058b8e))
+* fix cluster ([d439266](https://github.com/on-clouds/terraform/commit/d43926668f6561a8326488a23a643c83d03d2a73))
+* fix cluster ([abf70aa](https://github.com/on-clouds/terraform/commit/abf70aae1163ec1e5f95991198334f0283adccab))
+* update k8sgpt-operator ([8bc476c](https://github.com/on-clouds/terraform/commit/8bc476c8a172bda123fc833f7bb4dd1a05d27a1e))
+
+
+### Bug Fixes
+
+* b64encoding of k8sgpt secret ([0357943](https://github.com/on-clouds/terraform/commit/0357943129377a84ee391b0c8b02a336e0025b94))
+
+
+### Other
+
+* **deps:** update terraform google-beta to v4.62.0 ([ac2b164](https://github.com/on-clouds/terraform/commit/ac2b16472ada4c2eadc31a858da751405efd3dc3))
+
 ## [0.0.2](https://github.com/on-clouds/terraform/compare/v0.0.1...v0.0.2) (2023-04-16)
 
 

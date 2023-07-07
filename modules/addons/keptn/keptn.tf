@@ -7,6 +7,6 @@ resource "helm_release" "keptn" {
   lint             = true
   wait             = true
   chart = "klt"
-  version = "0.2.2"
+  version = "0.2.5"
   repository = "https://charts.lifecycle.keptn.sh"
 }

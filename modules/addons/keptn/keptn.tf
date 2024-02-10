@@ -6,7 +6,7 @@ resource "helm_release" "keptn" {
   namespace        = var.keptn_config.namespace
   lint             = true
   wait             = true
-  chart = "klt"
-  version = "0.2.2"
+  chart = "keptn"
+  version = "0.4.0"
   repository = "https://charts.lifecycle.keptn.sh"
 }

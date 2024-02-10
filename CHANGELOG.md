@@ -1,5 +1,42 @@
 # Changelog
 
+## [0.0.3](https://github.com/on-clouds/terraform/compare/v0.0.2...v0.0.3) (2024-02-10)
+
+
+### Features
+
+* add k8sgpt ([43daca1](https://github.com/on-clouds/terraform/commit/43daca167ef9a57ad3b5e9a9222b07026c1f117c))
+* add k8sgpt ([9f1db21](https://github.com/on-clouds/terraform/commit/9f1db21e4a12301bf6e81a2941725f7c9c976bb7))
+* add k8sgpt ([f194366](https://github.com/on-clouds/terraform/commit/f194366a29a791359d4081d95b731e55ae3b739d))
+* add k8sgpt ([9dc4ed7](https://github.com/on-clouds/terraform/commit/9dc4ed7024dc3df7e4ba39233e26467e9678cd36))
+* add k8sgpt ([5769168](https://github.com/on-clouds/terraform/commit/5769168643d3bb522d4b09e592a81131df150214))
+* add k8sgpt ([7185256](https://github.com/on-clouds/terraform/commit/7185256fbae50bab96ef9d1e57844e46e59b41c4))
+* add k8sgpt ([f07807b](https://github.com/on-clouds/terraform/commit/f07807b8581584de4dd249cb1476f0d1f2888ecf))
+* add k8sgpt ([87b5dd4](https://github.com/on-clouds/terraform/commit/87b5dd40dd5634d1a2ef8a926503c080f5df4626))
+* fix cluster ([305f39b](https://github.com/on-clouds/terraform/commit/305f39ba09ced11903620a118a50edba944cf190))
+* fix cluster ([e398143](https://github.com/on-clouds/terraform/commit/e3981435231e09365ff545d2fdf99078d0058b8e))
+* fix cluster ([d439266](https://github.com/on-clouds/terraform/commit/d43926668f6561a8326488a23a643c83d03d2a73))
+* fix cluster ([abf70aa](https://github.com/on-clouds/terraform/commit/abf70aae1163ec1e5f95991198334f0283adccab))
+* update k8sgpt-operator ([8bc476c](https://github.com/on-clouds/terraform/commit/8bc476c8a172bda123fc833f7bb4dd1a05d27a1e))
+
+
+### Bug Fixes
+
+* b64encoding of k8sgpt secret ([0357943](https://github.com/on-clouds/terraform/commit/0357943129377a84ee391b0c8b02a336e0025b94))
+
+
+### Other
+
+* **deps:** update actions/checkout action to v4 ([3c8997d](https://github.com/on-clouds/terraform/commit/3c8997d9db90194880680d2da05970f273d1393f))
+* **deps:** update actions/setup-python action to v5 ([e18a151](https://github.com/on-clouds/terraform/commit/e18a15136e1d356106b4716a928614447243f092))
+* **deps:** update google-github-actions/release-please-action action to v4 ([811f3d1](https://github.com/on-clouds/terraform/commit/811f3d10dc0d342ae797b967a56cb751978badd6))
+* **deps:** update helm release argo-cd to v5.55.0 ([1773887](https://github.com/on-clouds/terraform/commit/17738871e2764ffaa2c8dded3ce1111b81b85b24))
+* **deps:** update helm release cert-manager to v1.14.2 ([2179aa4](https://github.com/on-clouds/terraform/commit/2179aa48b19d9c9486690160821a48e49ecad3f8))
+* **deps:** update helm release k8sgpt-operator to v0.1.0 ([75c14c4](https://github.com/on-clouds/terraform/commit/75c14c4bb2a312342f70e1ea2f5b686d5c124e5b))
+* **deps:** update terraform google-beta to v4.62.0 ([ac2b164](https://github.com/on-clouds/terraform/commit/ac2b16472ada4c2eadc31a858da751405efd3dc3))
+* **deps:** update terraform google-beta to v5 ([033a93b](https://github.com/on-clouds/terraform/commit/033a93bd3e476a855c1842ad5949ffdeaca26f29))
+* **deps:** update terraform helm to v2.12.1 ([c2e13ad](https://github.com/on-clouds/terraform/commit/c2e13ad6b40df766cd5fe6229befa0074c585aef))
+
 ## [0.0.2](https://github.com/on-clouds/terraform/compare/v0.0.1...v0.0.2) (2023-04-16)
 
 

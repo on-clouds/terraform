@@ -4,7 +4,7 @@ resource "helm_release" "argo_cd" {
   name             = var.argo_config.name
   repository       = "https://argoproj.github.io/argo-helm"
   chart            = "argo-cd"
-  version          = "5.29.1"
+  version          = "5.55.0"
   timeout          = 1200
   create_namespace = true
   namespace        = var.argo_config.namespace

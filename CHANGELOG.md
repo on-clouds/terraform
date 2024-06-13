@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/on-clouds/terraform/compare/v0.0.3...v0.0.4) (2024-06-13)
+
+
+### Other
+
+* **deps:** update terraform helm to v2.14.0 ([89e72ad](https://github.com/on-clouds/terraform/commit/89e72adf4d8ee473b225a9da90cca6cb7065da15))
+
 ## [0.0.3](https://github.com/on-clouds/terraform/compare/v0.0.2...v0.0.3) (2024-02-10)
 
 

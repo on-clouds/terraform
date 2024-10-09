@@ -7,7 +7,7 @@ resource "helm_release" "cert-manager" {
   lint             = true
   wait             = true
   chart            = "cert-manager"
-  version          = "v1.15.0"
+  version          = "v1.16.1"
   repository       = "https://charts.jetstack.io"
 
   dynamic "set" {

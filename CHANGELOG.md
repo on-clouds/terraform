@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.4](https://github.com/on-clouds/terraform/compare/v0.0.3...v0.0.4) (2024-06-13)
+
+
+### Other
+
+* **deps:** update helm release cert-manager to v1.15.0 ([276545e](https://github.com/on-clouds/terraform/commit/276545e5df3be6dbab536c504a544d2675bc9938))
+* **deps:** update terraform google-beta to v5.33.0 ([43939be](https://github.com/on-clouds/terraform/commit/43939be8058ed458a90e31ca1e1a8c43cdf51a48))
+* **deps:** update terraform helm to v2.14.0 ([89e72ad](https://github.com/on-clouds/terraform/commit/89e72adf4d8ee473b225a9da90cca6cb7065da15))
+
 ## [0.0.3](https://github.com/on-clouds/terraform/compare/v0.0.2...v0.0.3) (2024-02-10)
 
 

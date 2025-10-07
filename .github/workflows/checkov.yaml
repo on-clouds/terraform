@@ -13,7 +13,7 @@ jobs:
       - name: Set up Python 3.8
         uses: actions/setup-python@0a5c61591373683505ea898e09a3ea4f39ef2b9c # v5
         with:
-          python-version: 3.8
+          python-version: 3.14
       - name: Test with Checkov
         id: checkov
         uses: bridgecrewio/checkov-action@master

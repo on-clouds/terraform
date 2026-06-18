@@ -16,7 +16,7 @@ jobs:
           python-version: 3.8
       - name: Test with Checkov
         id: checkov
-        uses: bridgecrewio/checkov-action@master
+        uses: bridgecrewio/checkov-action@fa9edf8f0a491c59a924ea6accd5bdcf07752cff # master
         with:
           framework: terraform
           skip_check: CKV_GCP_21,CKV_GCP_25,CKV_GCP_61,CKV_GCP_68
